@@ -1,7 +1,35 @@
 {% extends "layout.html" %}
 
-{% block title %} Home Page{% endblock %}
+{% block title %}Home Page{% endblock %}
 
 {% block content %}
-<h1 class="bg-orange-300 text-red-700">chai aur cdoe home page</h1>
+<div class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-orange-400 mb-6">Welcome to Chai Store</h1>
+        <p class="text-lg md:text-xl text-gray-400 mb-8 leading-relaxed">Indulge in the rich flavors and comforting aromas of our artisanal chai blends, meticulously crafted to elevate your chai experience.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-orange-400 mb-4">Discover Exquisite Flavors</h2>
+                <p class="text-lg text-gray-400 leading-relaxed">Explore our diverse range of handpicked chai varieties, each offering a unique blend of spices and aromatics to tantalize your taste buds.</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-orange-400 mb-4">Quality Ingredients</h2>
+                <p class="text-lg text-gray-400 leading-relaxed">We use only the finest ingredients sourced from trusted suppliers, ensuring freshness, authenticity, and exceptional taste in every cup of chai.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-orange-400 mb-4">Perfectly Brewed</h2>
+                <p class="text-lg text-gray-400 leading-relaxed">Our chai is meticulously brewed to perfection, ensuring a harmonious balance of flavors and aromas with every sip.</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-orange-400 mb-4">Authentic Experience</h2>
+                <p class="text-lg text-gray-400 leading-relaxed">Immerse yourself in the authentic chai-drinking experience, reminiscent of traditional chai stalls found across India.</p>
+            </div>
+        </div>
+        <p class="text-lg text-gray-400 mt-8">Made with <span class="text-orange-400">♥</span> by <span class="text-orange-400">Ashwin Hegde</span></p>
+        <p class="text-lg text-gray-400">Special thanks to <span class="text-orange-400">Hitesh Choudhary</span></p>
+        <a href="{% url 'allchai' %}" class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg mt-8 transition duration-300 inline-block">Explore Chai Varieties</a>
+    </div>
+</div>
 {% endblock %}
